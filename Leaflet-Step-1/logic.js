@@ -1,7 +1,7 @@
 // Use this link to get the geojson data
 var link = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-// Perform a GET request to the query URL
+// Grab the GeoJSON data
 d3.json(link, function (data) {
   createFeatures(data.features);
 });
